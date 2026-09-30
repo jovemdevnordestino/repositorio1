@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        div#area{
+            background: red;
+            color:  white;
+            width: 200px;
+            height: 200px;/*altura*/
+            text-align: center;
+            line-height: 200px;/*altura da linha*/
+            font-size: 30px;/*Tamanho da fonte*/
+            font-family: Arial, helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Eventos DOM</h1> 
+    <div id="area" onclick="clicar()"
+    onmousemove="entrou()">Interaja</div>
+    <p>Eventos DOM: mouseenter; mouseout; mousemove;
+     mouseup; mousedown; click</p>
+<script>
+    function clicar(){
+        var a = document.getElementById('area')
+        a.innerText = 'Clicou'  
+    }
+    function entrou(){
+        var a = document.getElementById('area')
+        a.innerText = 'Entrou'
+        a.style.background= 'blue'
+    }
+</script>
+</body>
+</html>

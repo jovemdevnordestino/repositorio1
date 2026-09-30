@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" conten
+    
+    t="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Disparar eventos com listener</h1>
+    <p>Além de disparar eventos dentro do HTML, podemos disparar utilizando listener dentro do JS.</p>
+    <div id="area"> Interaja </div>
+    <script>
+        var a = document.queryselector('div#area')
+        a.addEventListener("click",clicar)
+        a.addEventListener("mouseenter",entrar)
+        a.addEventListener("mouseout",sair)
+        function clicar () {
+            a.innerHTML = 'Clicou'
+            a.style.background = "purple"
+        }
+         function entrar () {
+            a.innerHTML = 'entrou'
+            a.style.background = "purple"
+        }
+         function sair () {
+            a.innerHTML = 'saiu'
+            a.style.background = "purple"
+        }
+
+
+    </script>
+</body>
+</html>
